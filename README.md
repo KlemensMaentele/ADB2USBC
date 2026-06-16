@@ -18,7 +18,7 @@ Features:
 
 ## Firmware
 
-This repository does **not** include firmware.
+This repository does not include firmware.
 
 The board is designed to run the ADB-to-USB converter implementation provided by the TMK Keyboard Firmware project:
 
@@ -34,6 +34,11 @@ The repository contains:
 * PCB design files
 * Schematic
 * Manufacturing outputs (Gerber files)
+
+## Notes
+
+* The 6-pin Atmel ISP header is optional and was primarily included for development and debugging.
+* Firmware can be flashed using the ATmega32U2's USB DFU bootloader, so the ISP header may be removed for normal use.
 
 ## Pictures
 
