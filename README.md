@@ -31,14 +31,24 @@ Please refer to the TMK documentation for building and flashing firmware.
 
 The repository contains:
 
-* PCB design files
+* KiCad project files
 * Schematic
-* Manufacturing outputs (Gerber files)
+* Bill of Materials (BOM)
+* Custom footprint, symbol and 3D model files for the ADB connector
 
-## Notes
+### BOM
 
-* The 6-pin Atmel ISP header is optional and was primarily included for development and debugging.
-* Firmware can be flashed using the ATmega32U2's USB DFU bootloader, so the ISP header may be removed for normal use.
+A Bill of Materials (BOM) is included for assembly. The provided BOM was created specifically for JLCPCB assembly services and includes the manufacturer part numbers used for the original build. Component availability may change over time, so substitutions may be required.
+
+### Manufacturing
+
+Gerber files are not included in this repository. They can be easily generated from the included KiCad project files using KiCad's built-in fabrication output tools.
+
+### ISP Header
+
+The board includes a standard 6-pin Atmel ISP header for development and debugging purposes.
+
+For normal operation, the ISP header is not required. The ATmega32U2 can be programmed via its USB DFU bootloader, so the header may be removed.
 
 ## Pictures
 
