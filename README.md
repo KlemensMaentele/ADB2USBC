@@ -33,14 +33,15 @@ The repository contains:
 
 * PCB design files
 * Schematic
-* Manufacturing outputs (Gerber files) can easily be created in KiCad
+* Manufacturing outputs (Gerber files)
 
 ## Pictures
 
 ### Assembled Board
 
-![ADB2USBC Board](pictures/image1.jpeg)
-![ADB2USBC PCB](pictures/image2.jpeg)
+![ADB2USBC Board-1](pictures/image1.jpeg)
+![ADB2USBC Board-2](pictures/image2.jpeg)
 
 ### PCB
 ![ADB2USBC PCB](pictures/pcb-view.png)
+![ADB2USBC PCB-3D](pictures/pcb-3d.png)
