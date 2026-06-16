@@ -1,40 +1,46 @@
 # ADB2USBC
 
-**ADB-to-USB Converter for Apple Keyboards**
+**ADB-to-USB Converter for Apple Desktop Bus Keyboards**
 
-This project provides firmware and hardware to convert old **Apple Desktop Bus (ADB)** keyboards into modern **USB HID** keyboards using an **ATmega32U2 MCU**.  
-It is based on the **TMK keyboard firmware project**, which includes a ADB to USB protocol converter.
-
----
+ADB2USBC is a small PCB that allows vintage Apple ADB keyboards to be used as modern USB HID keyboards. The board is built around an ATmega32U2 microcontroller and is intended to run the ADB-to-USB converter firmware from the TMK Keyboard Firmware project.
 
 ## Overview
 
-This board acts as a bridge between:
-- **ADB keyboard (Apple vintage keyboards)**
-- **Modern USB host devices (PC, Mac, Linux, etc.)**
+This project contains the hardware design files for an ADB-to-USB converter board.
 
-### Features
-- ADB protocol support  
-- USB HID keyboard output  
-- Based on **TMK keyboard firmware**
-- MCU: **ATmega32U2**
-- DFU bootloader flashing via USB
+Features:
 
----
+* Supports Apple Desktop Bus (ADB) keyboards
+* USB HID keyboard output
+* ATmega32U2 microcontroller
+* Compatible with TMK's ADB-to-USB converter firmware
+* USB DFU bootloader support for firmware flashing
 
 ## Firmware
 
-The firmware is based on the **TMK Keyboard Firmware Collection**  
-TMK includes an ADB-USB converter implementation with full HID support.
+This repository does **not** include firmware.
 
-TMK Project:  
+The board is designed to run the ADB-to-USB converter implementation provided by the TMK Keyboard Firmware project:
+
+TMK Keyboard Firmware:
 https://github.com/tmk/tmk_keyboard
 
----
+Please refer to the TMK documentation for building and flashing firmware.
+
+## Hardware
+
+The repository contains:
+
+* PCB design files
+* Schematic
+* Manufacturing outputs (Gerber files) can easily be created in KiCad
 
 ## Pictures
 
-> Hardware and PCB photos
+### Assembled Board
 
 ![ADB2USBC Board](pictures/image1.jpeg)
 ![ADB2USBC PCB](pictures/image2.jpeg)
+
+### PCB
+![ADB2USBC PCB](pictures/pcb-view.png)
